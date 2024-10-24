@@ -3,7 +3,7 @@ require_once('conf.php');
 require_once('dompdf/autoload.inc.php');
 
 
-$filename = "reporte_productos_menores_existencias_" . date("Ymd_His") . "pdf";
+$filename = "Reporte_productos_menores_existencias_" . date("Ymd_His") . "pdf";
 $query  = "SELECT id, producto, existencias, bodegas FROM `tbl_invesproduct` WHERE existencias < 10 ORDER BY existencias";
 $result = mysqli_query($conn, $query);
 
