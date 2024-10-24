@@ -35,8 +35,8 @@
     }
 
     main {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        display:contents;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 12fr));
         gap: 0.5rem;
     }
 
@@ -56,7 +56,15 @@
         <h1>Reportes</h1>
         <main>
             <section>
-                <h3>Productos con existencias menores a 10</h3>
+                <h3>Productos Introducidos por última vez.</h3>
+                <form action="informeProductosIntroducidos.php" method="post">
+                    <input type="submit" value="Generar PDF">
+                </form>
+            </section>
+            <br><br>
+
+            <section>
+                <h3>Productos con existencias menores a 10.</h3>
                 <form action="informeProductosExistencias.php" method="post">
                     <input type="submit" value="Generar PDF">
                 </form>
@@ -64,7 +72,7 @@
             <br><br>
 
             <section>
-                <h3>Productos Vencidos (Septiembre 2024)</h3>
+                <h3>Productos Vencidos (Septiembre 2024).</h3>
                 <form action="informeProductosVencidos.php" method="post">
                     <input type="submit" value="Generar PDF">
                 </form>
