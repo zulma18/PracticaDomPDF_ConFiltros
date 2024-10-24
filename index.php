@@ -61,6 +61,14 @@
                     <input type="submit" value="Generar PDF">
                 </form>
             </section>
+            <br><br>
+
+            <section>
+                <h3>Productos Vencidos (Septiembre 2024)</h3>
+                <form action="informeProductosVencidos.php" method="post">
+                    <input type="submit" value="Generar PDF">
+                </form>
+            </section>
         </main>
     </div>
 </body>
